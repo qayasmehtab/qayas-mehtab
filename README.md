@@ -44,12 +44,11 @@ Below are some of my key projects. Click to explore more:
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=qayas-mehtab&layout=compact&theme=dark)
 
 ---
+## 📫 Connect With Me
 
-## 📫 How to Reach Me
-
-- **LinkedIn**: [qayas-mehtab](https://www.linkedin.com/in/qayas-mehtab)  
-- **Email**: qaysabbasi98@gmail.com  
----
+ **GitHub**: `@qayasmehtab  
+- **LinkedIn**: [Qayasmehtab](https://www.linkedin.com/in/…)  
+- **Email**: qayasabbasi98@gmail.com 
 
 > “Data is the new oil, but only when refined properly.”  
 
