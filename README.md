@@ -6,8 +6,6 @@
   <img align="left" width="26px" src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/gmail_new_logo-256.png" />
 </a>
 
-**Cloud Data Engineer | Python | SQL | Streaming & Data Pipelines**
-
 ---
 
 ## 📌 About Me
