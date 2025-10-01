@@ -48,9 +48,7 @@ Below are some of my key projects. Click to explore more:
 ## 📫 How to Reach Me
 
 - **LinkedIn**: [qayas-mehtab](https://www.linkedin.com/in/qayas-mehtab)  
-- **Email**: your.email@example.com  
-- **Portfolio / Website**: yourwebsite.com  
-
+- **Email**: qaysabbasi98@gmail.com  
 ---
 
 > “Data is the new oil, but only when refined properly.”  
