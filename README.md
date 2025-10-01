@@ -1,6 +1,5 @@
-@@ -1,28 +1,28 @@
 https://github.com/qayasmehtab
-
+https://www.linkedin.com/in/qayas-mehtab/
 # Hi, I’m Qayas Mehtab 👋  
 **Cloud Data Engineer | Python | SQL | Streaming & Data Pipelines**
 
