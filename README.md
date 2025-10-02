@@ -43,15 +43,11 @@ Below are some of my key projects. Click to explore more:
 
 ---
 
-## 📈 GitHub Stats
-
-![Qayas’s GitHub stats](https://github-readme-stats.vercel.app/api?username=qayas-mehtab&show_icons=true&hide_border=true&theme=dark)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=qayas-mehtab&layout=compact&theme=dark)
 
 ---
 ## 📫 Connect With Me
 
- **GitHub**: `@qayasmehtab  
+ **GitHub**:github.com/qayasmehtab   
 - **LinkedIn**: [Qayasmehtab](https://www.linkedin.com/in/…)  
 - **Email**: qayasabbasi98@gmail.com 
 
