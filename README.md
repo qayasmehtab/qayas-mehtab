@@ -9,11 +9,7 @@
 ---
 
 ## 📌 About Me
-
-- 9+ years experience in Procurement & Warehouse Management, 5+ years in Networking  
-- Passionate about building scalable **data systems**, real-time pipelines, and cloud architectures  
-- Skilled in **AWS**, **Google Cloud**, **Apache Spark**, **Kafka**, **Python**, **SQL**  
-- I enjoy solving data challenges, optimizing performance, and contributing to open source  
+Cloud Data Engineer with 9+ years in Procurement & Warehouse Management and 5+ years in Networking. Skilled in AWS, Google Cloud, SQL, Python, Apache Spark, MongoDB, Git/GitHub, Visual Studio Code, and ETL Pipelines for data extraction, transformation, and loading. Experienced in Data Warehousing (Redshift, BigQuery, Snowflake) and adept at building scalable, efficient, and secure data solutions by combining operational precision with advanced cloud technology. 
 
 ---
 
