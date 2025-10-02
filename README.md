@@ -46,8 +46,6 @@ Below are some of my key projects. Click to explore more:
 
 ---
 ## 📫 Connect With Me
-
- **GitHub**:github.com/qayasmehtab   
 - **LinkedIn**: [Qayasmehtab](https://www.linkedin.com/in/…)  
 - **Email**: qayasabbasi98@gmail.com 
 
