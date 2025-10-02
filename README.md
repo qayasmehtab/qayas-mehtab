@@ -35,10 +35,8 @@ Below are some of my key projects. Click to explore more:
 - [Project-C (Cloud-based Data Warehouse)](link-to-repo) — Built on AWS Redshift / BigQuery  
 - [Project-D (Dashboard / Reporting Tool)](link-to-repo) — Data visualizations & user interface  
 
-*(More projects available in the Repositories section.)*
 
----
-
+📌 GitHub Projects Coming Soon: Real-world ETL pipelines, data warehouse models, automation scripts, and cloud-native solutions.
 
 ---
 ## 📫 Connect With Me
