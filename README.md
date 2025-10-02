@@ -9,20 +9,20 @@
 ---
 
 ## 📌 About Me
-Cloud Data Engineer with 9+ years in Procurement & Warehouse Management and 5+ years in Networking. Skilled in AWS, Google Cloud, SQL, Python, Apache Spark, MongoDB, Git/GitHub, Visual Studio Code, and ETL Pipelines for data extraction, transformation, and loading. Experienced in Data Warehousing (Redshift, BigQuery, Snowflake) and adept at building scalable, efficient, and secure data solutions by combining operational precision with advanced cloud technology. 
+🚀 Cloud Data Engineer with 9+ years in Procurement & Warehouse Management and 5+ years in Networking.
+Skilled in AWS, Google Cloud, SQL, Python, Apache Spark, MongoDB, Git/GitHub, and ETL Pipelines for data extraction, transformation, and loading.
 
+💡 Experienced in Data Warehousing (Redshift, BigQuery, Snowflake) and adept at building scalable, efficient, and secure data solutions by combining operational precision with advanced cloud technologies.
 ---
 
-## 🛠️ Skills & Technologies
-
-| Domain | Technologies / Tools |
-|---|---|
-| **Programming & Scripting** | Python, SQL, Bash |
-| **Data Processing / Streaming** | Apache Spark, Kafka, Airflow |
-| **Cloud / Infrastructure** | AWS (EC2, S3, Lambda, Redshift etc.), GCP |
-| **Databases & Storage** | MySQL, PostgreSQL, NoSQL, Data Warehouses |
-| **Version Control / DevOps** | Git, GitHub, CI/CD pipelines |
-| **Others** | Linux, Docker, Monitoring & Logging |
+| Domain                          | Technologies / Tools                               |
+| ------------------------------- | -------------------------------------------------- |
+| **Programming & Scripting**     | Python 🐍, SQL, Bash                               |
+| **Data Processing / Streaming** | Apache Spark ⚡, Kafka, Airflow                     |
+| **Cloud / Infrastructure**      | AWS ☁️ (EC2, S3, Lambda, Redshift etc.), GCP       |
+| **Databases & Storage**         | MySQL, PostgreSQL, MongoDB, NoSQL, Data Warehouses |
+| **Version Control / DevOps**    | Git, GitHub, CI/CD pipelines                       |
+| **Others**                      | Linux 🐧, Docker 🐳, Monitoring & Logging          |
 
 ---
 
