@@ -1,47 +1,36 @@
-## Hey <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px" height= "29">, I'm Qayas!
-<a href="https://www.linkedin.com/in/qayas-mehtab/" target="_blank" rel="noopener noreferrer">
-  <img align="left" width="24px" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-256.png"  />
+# QAYAS MEHTAB
+**Skilled Cloud Data Engineer** with a track record of creating impactful solutions across data engineering and cloud technologies. Experienced in data pipelining, cloud architecture, and data management, with expertise in bridging the technical and business dimensions of data. Proficient in data engineering tools such as AWS, Snowflake, and SQL Server, with a passion for integrating new technologies into business processes to drive efficiency and scalability.
 
-  <a href="mailto:qayasabbasi98gmail.com" target="_blank" rel="noopener noreferrer">
-  <img align="left" width="26px" src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/gmail_new_logo-256.png" />
-</a>
+![My GitHub Banner](https://github.com/umair7228/umair7228/blob/main/de-banner.jpeg)
+## 🛠️ 𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐒𝐤𝐢𝐥𝐥𝐬:
+- **𝗖𝗹𝗼𝘂𝗱 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺𝘀:** Amazon Web Services (AWS)
+- **𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗧𝗼𝗼𝗹𝘀:** Snowflake, Apache Airflow, Apache Kafka
+- **𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴 & 𝗦𝗰𝗿𝗶𝗽𝘁𝗶𝗻𝗴 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀:** Python, SQL
+- **𝗗𝗮𝘁𝗮 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀 & 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻:** NumPy, Pandas, Matplotlib, BeautifulSoup, Selenium
+- **𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸𝘀 & 𝗟𝗶𝗯𝗿𝗮𝗿𝗶𝗲𝘀:** Tailwind CSS, Framer Motion, Shadcn UI
 
----
-
-## 📌 About Me
-🚀 Cloud Data Engineer with 9+ years in Procurement & Warehouse Management and 5+ years in Networking.
-Skilled in AWS, Google Cloud, SQL, Python, Apache Spark, MongoDB, Git/GitHub, and ETL Pipelines for data extraction, transformation, and loading.
-
-💡 Experienced in Data Warehousing (Redshift, BigQuery, Snowflake) and adept at building scalable, efficient, and secure data solutions by combining operational precision with advanced cloud technologies.
----
-
-| Domain                          | Technologies / Tools                               |
-| ------------------------------- | -------------------------------------------------- |
-| **Programming & Scripting**     | Python 🐍, SQL, Bash                               |
-| **Data Processing / Streaming** | Apache Spark ⚡, Kafka, Airflow                     |
-| **Cloud / Infrastructure**      | AWS ☁️ (EC2, S3, Lambda, Redshift etc.), GCP       |
-| **Databases & Storage**         | MySQL, PostgreSQL, MongoDB, NoSQL, Data Warehouses |
-| **Version Control / DevOps**    | Git, GitHub, CI/CD pipelines                       |
-| **Others**                      | Linux 🐧, Docker 🐳, Monitoring & Logging          |
+## 📜 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧𝐬:
+- Data Engineering in Python (DataCamp)
+- Associate Data Engineer in SQL (DataCamp)
+- Data Engineering (Snowflake)
+- Data Lake (Snowflake)
+- Data Wearhousing (Snowflake)
 
 ---
 
-## 📂 Featured Projects
+### 🎢 GitHub Fun Zone:
 
-Below are some of my key projects. Click to explore more:
-
-- [Project-A (Data Pipeline & ETL)](link-to-repo) — Real-time ingestion, transformation & loading  
-- [Project-B (Streaming Analytics)](link-to-repo) — Kafka + Spark streaming analytics  
-- [Project-C (Cloud-based Data Warehouse)](link-to-repo) — Built on AWS Redshift / BigQuery  
-- [Project-D (Dashboard / Reporting Tool)](link-to-repo) — Data visualizations & user interface  
-
-
-📌 GitHub Projects Coming Soon: Real-world ETL pipelines, data warehouse models, automation scripts, and cloud-native solutions.
+<div align="center" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+  <a href="#"><img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=qayas-mehtab
+                &show_icons=true&bg_color=0D1117&title_color=00AFFF&text_color=FFFFFF&icon_color=00F0FF&hide_border=true" height="180px"/></a>
+  <a href="#"><img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=umair7228&layout=compact&bg_color=0D1117&title_color=00AFFF&text_color=FFFFFF&hide_border=true" height="180px"/></a>
+ <a href="#"><img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=umair7228&show_icons=true&locale=en&layout=demo&theme=algolia&hide_border=true" height="180px"/></a>
+</div>
 
 ---
-## 📫 Connect With Me
-- **LinkedIn**: [Qayasmehtab](https://www.linkedin.com/in/…)  
-- **Email**: qayasabbasi98@gmail.com 
 
-> “Data is the new oil, but only when refined properly.”  
-
+#### 🌍 Let's Connect:
+<div align="center">
+    <a href="mailto:umairnawaz7228@gmail.com"><img src="https://img.shields.io/badge/-Email-0D1117?style=for-the-badge&logo=protonmail&logoColor=00AFFF" alt="Email"></a>
+    <a href="https://www.linkedin.com/in/umairnawaz7228"><img src="https://img.shields.io/badge/-LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=004080" alt="LinkedIn"></a>
+</div>
