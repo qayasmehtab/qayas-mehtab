@@ -1,4 +1,7 @@
 <div align="center"> 
+  <a href="https://gitroll.io/profile/u15a1BAMUEXfzPf2DJj3XjSJ0ZZj2" target="_blank"><img src="https://gitroll.io/api/badges/profiles/v1/u15a1BAMUEXfzPf2DJj3XjSJ0ZZj2" alt="GitRoll Profile Badge"/></a>
+</div>
+
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/c34d7016-04df-432a-a661-f75d28ff3173" />
 </div>
 # QAYAS MEHTAB
