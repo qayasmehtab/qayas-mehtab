@@ -1,5 +1,5 @@
 <div align="center"> 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/c34d7016-04df-432a-a661-f75d28ff3173" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/c34d7016-04df-432a-a661-f75d28ff3173" />
 </div>
 # QAYAS MEHTAB
 **Skilled Cloud Data Engineer** with a track record of creating impactful solutions across data engineering and cloud technologies. Experienced in data pipelining, cloud architecture, and data management, with expertise in bridging the technical and business dimensions of data. Proficient in data engineering tools such as AWS, Snowflake, and SQL Server, with a passion for integrating new technologies into business processes to drive efficiency and scalability.
