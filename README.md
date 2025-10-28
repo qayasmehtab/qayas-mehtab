@@ -1,15 +1,16 @@
 <div align="center"> 
-  <div style="text-align: center; font-family: Arial, sans-serif;">
+<div style="text-align: center; font-family: Arial, sans-serif;">
   <h2 style="margin-bottom: 5px;">Qayas Mehtab</h2>
   <p style="margin-top: 0; color: gray;">Cloud Data Engineer</p>
-  <a href="https://gitroll.io/profile/u15a1BAMUEXfzPf2DJj3XjSJ0ZZj2" target="_blank">
+  <a href="https://gitroll.io/profile/uQSXdu0lV0ihRZE2334PhXIvbLU63" target="_blank">
     <img 
-      src="https://gitroll.io/api/badges/profiles/v1/u15a1BAMUEXfzPf2DJj3XjSJ0ZZj2" 
+      src="https://gitroll.io/api/badges/profiles/v1/uQSXdu0lV0ihRZE2334PhXIvbLU63" 
       alt="GitRoll Profile Badge"
-      style="border-radius: 10px; width: 250px;"
+      style="border-radius: 20px; width: 450px;"
     />
   </a>
 </div>
+>
 
 
 # QAYAS MEHTAB
