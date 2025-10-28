@@ -1,3 +1,6 @@
+<div align="center">
+  <a href="https://gitroll.io/profile/u15a1BAMUEXfzPf2DJj3XjSJ0ZZj2" target="_blank"><img src="https://gitroll.io/api/badges/profiles/v1/u15a1BAMUEXfzPf2DJj3XjSJ0ZZj2" alt="GitRoll Profile Badge"/></a>
+</div>
 # QAYAS MEHTAB
 **Skilled Cloud Data Engineer** with a track record of creating impactful solutions across data engineering and cloud technologies. Experienced in data pipelining, cloud architecture, and data management, with expertise in bridging the technical and business dimensions of data. Proficient in data engineering tools such as AWS, Snowflake, and SQL Server, with a passion for integrating new technologies into business processes to drive efficiency and scalability.
 
@@ -11,6 +14,9 @@
 ## 📜 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧𝐬:
 - Data Engineering in Python (DataCamp)
 - Associate Data Engineer in SQL (DataCamp)
+- Data Engineering (Snowflake)
+- Data Lake (Snowflake)
+- Data Wearhousing (Snowflake)
 
 ---
 
