@@ -6,6 +6,7 @@
 
 
 
+
 # QAYAS MEHTAB
 **Skilled Cloud Data Engineer** with a track record of creating impactful solutions across data engineering and cloud technologies. Experienced in data pipelining, cloud architecture, and data management, with expertise in bridging the technical and business dimensions of data. Proficient in data engineering tools such as AWS, Snowflake, and SQL Server, with a passion for integrating new technologies into business processes to drive efficiency and scalability.
 
@@ -14,7 +15,7 @@
 - **𝗖𝗹𝗼𝘂𝗱 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺𝘀:** Amazon Web Services (AWS)
 - **𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗧𝗼𝗼𝗹𝘀:** Snowflake, Apache Airflow, Apache Kafka
 - **𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴 & 𝗦𝗰𝗿𝗶𝗽𝘁𝗶𝗻𝗴 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀:** Python, SQL
-- **𝗗𝗮𝘁𝗮 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀 & 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻:** NumPy, Pandas, Matplotlib, BeautifulSoup, Selenium
+- **𝗗𝗮𝘁𝗮 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀 & 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻:** NumPy, Pandas, Matplotlib, BeautifulSoup,
 
 ## 📜 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧𝐬:
 - Data Engineering in Python (DataCamp)
