@@ -1,78 +1,66 @@
-<div align="center">
-  <h2>Hi, I’m Qayas Abbasi 👋</h2>
-  <p>Cloud Data Engineer</p>
+# 👋 Hi, I'm Qayas Mehtab
 
-  <a href="https://gitroll.io/profile/uQSXdu0lV0ihRZE2334PhXIvbLU63" target="_blank">
-    <img src="https://gitroll.io/api/badges/profiles/v1/uQSXdu0lV0ihRZE2334PhXIvbLU63" alt="GitRoll Badge" />
-  </a>
-</div>
+## ☁️ Aspiring Cloud Data Engineer
 
 ---
 
-### 👨‍💻 About Me
-I’m a Cloud Data Engineer who enjoys turning raw data into something useful and meaningful.  
-I work mainly with **AWS, Snowflake, and Python**, and I like building data pipelines that are simple, reliable, and easy to understand.
+## 🧑‍💻 About Me
+I am an aspiring **Cloud Data Engineer** with a strong foundation in **Python-based ETL pipelines**, data extraction, transformation, and loading workflows. I am currently transitioning from a solid **operations and warehouse management background** into data engineering, where I apply real-world data handling experience to build **structured, reliable, and scalable data solutions**.
 
-I believe good data engineering is not just about tools — it’s about solving real problems in a clean and practical way.
-
----
-
-### 🛠️ What I Work With
-- **Cloud:** AWS, Snowflake  
-- **Data Engineering:** ETL / ELT pipelines, Apache Airflow, Apache Kafka  
-- **Programming:** Python, SQL  
-- **Databases:** Snowflake, PostgreSQL, SQL Server  
-- **Web Scraping:** BeautifulSoup, Selenium  
+I have hands-on experience in **web scraping, data cleaning, SQL databases, and dashboard development**, and I focus on building **end-to-end data pipelines** that are easy to understand, maintain, and scale. I am actively seeking a **full-time entry-level Cloud / Data Engineering role** where I can grow technically and contribute to data-driven decision-making.
 
 ---
 
-### ❄️ Snowflake Learning & Badges
-I’ve completed the **Snowflake University Core Series (Badges 1–5)**, which helped me understand modern cloud data warehousing in depth.
+## 🛠️ Technical Skills
 
-- Data Warehousing  
-- Data Lakes  
-- Multi-Cluster Architecture  
-- Data Applications  
-- Secure Data Sharing  
+### 🔹 Programming & Data
+- Python (NumPy, Matplotlib)
+- SQL (Queries, Validation)
 
----
+### 🔹 Data Engineering & ETL
+- Data Extraction Modules
+- Transformation Logic
+- CSV & Database Loading
+- Log Verification & Validation
+- SQL Query Execution Functions
 
-### 🚀 Projects I’ve Worked On
-
-#### 📊 Data Engineering & ETL
-- **ETL With Python**  
-  A Python-based ETL project that automates data extraction, transformation, and loading.
-
-- **Advanced ETL Framework**  
-  A structured and scalable ETL setup designed for real-world data workflows.
-
-#### 🕷️ Web Scraping
-- **PakWheels Data Project**  
-  Collected and cleaned automotive data using BeautifulSoup and Selenium.
-
-- **Banggood Scraper**  
-  Extracted e-commerce product data for analysis and research.
-
-- **Scraping Toolkit**  
-  A reusable toolkit for scraping JavaScript-heavy websites.
+### 🔹 Tools & Technologies
+- Git & Git Bash
+- Snowflake
+- Web Scraping (BeautifulSoup, Selenium)
+- Microsoft SQL Server
+- Streamlit
 
 ---
 
-### 🌐 Live Apps & Work
-- 🚀 **Vercel Apps:** https://vercel.com/qayas-mehtabs
+## 📂 Projects
+
+### 🚗 PakWheels Data ETL Pipeline  
+**October 2025**
+
+- **Extract:** Scraped data from 10+ pages of vehicle listings  
+- **Transform:** Cleaned, normalized, and visualized data using Python  
+- **Load:** Stored processed data into Microsoft SQL Server  
+- **Deploy:** Built and deployed insights using a Streamlit web application
 
 ---
 
-### 📈 GitHub Activity
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=qayas-mehtab&show_icons=true&hide_border=true" height="170"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=qayas-mehtab&hide_border=true" height="170"/>
-</div>
+### 🛒 Banggood Product Data Pipeline & Analysis  
+**November 2025**
+
+- **Data Acquisition:** Scraped 5+ product categories  
+- **Data Wrangling:** Converted messy web data into structured formats  
+- **Database Management:** Loaded CSV data into a SQL environment  
+- **Business Intelligence:** Created a live dashboard for price and rating analysis
 
 ---
 
-### 📬 Let’s Connect
-- 📧 Email: **qayasabbasi@gmail.com**  
-- 💼 LinkedIn: https://www.linkedin.com/in/qayas-mehtab  
+## 📫 Contact
+- 📧 Email: qayasabbasi98@gmail.com  
+- 📞 Phone: +92 321 2811321  
+- 🐙 GitHub: https://github.com/qayasmehtab  
+- 💼 LinkedIn: https://linkedin.com/in/qayas  
 
-If you’re interested in data engineering, cloud projects, or collaboration, feel free to reach out.
+---
+
+⭐ Feel free to explore my repositories. I am always open to learning, collaboration, and entry-level opportunities in Cloud and Data Engineering.
