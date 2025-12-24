@@ -1,53 +1,60 @@
-# Hi there, I'm Qayas Mehtab! 👋
+<div align="center">
 
-![Banner](https://your-banner-url-here.com) ### 🚀 Aspiring Cloud Data Engineer | ETL Specialist | Python Enthusiast
+# Qayas Mehtab
+### ☁️ Cloud Data Engineer | ETL Specialist | Python Scripter
 
-I am a dedicated **Cloud Data Engineer** in the making, transitioning from a strong background in Operations and Warehouse Management into the world of Data Engineering. I specialize in building end-to-end **ETL Pipelines**, transforming raw data into actionable insights.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/qayas)
+[![Portfolio](https://img.shields.io/badge/GitHub-Portfolio-black?style=for-the-badge&logo=github)](https://github.com/qayasmehtab)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:qayasabbasi98@gmail.com)
 
 ---
 
-### 🛠️ Technical Toolbox
+![Banner](https://github.com/qayasmehtab/qayasmehtab/blob/main/banner.png) 
+*(Note: Upload the generated banner to your repo and update this link)*
 
-| Category | Skills |
+</div>
+
+## 📖 About Me
+I am an aspiring **Cloud Data Engineer** transitioning from a successful **Operations & Warehouse** background at **Air Blue**. My experience in managing complex inventory systems gives me a unique edge in understanding data reliability and operational efficiency. I am now building scalable, automated ETL pipelines and data warehouses.
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+| Language / Tool | Specialized In |
 | :--- | :--- |
-| **Languages** | Python (Pandas, NumPy, Matplotlib), SQL |
-| **Data Engineering** | ETL Pipelines, Web Scraping (BeautifulSoup, Selenium), Logging & Validation |
-| **Databases** | Microsoft SQL Server, Snowflake |
-| **Cloud** | AWS (Learning), Snowflake Ecosystem |
-| **Tools** | Streamlit, Git/GitHub |
+| **Languages** | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?logo=mysql&logoColor=white) |
+| **Data Engineering** | Web Scraping (Selenium/BS4), ETL Development, Logging & Validation |
+| **Databases** | ![Snowflake](https://img.shields.io/badge/-Snowflake-29B5E8?logo=snowflake&logoColor=white) ![MS SQL](https://img.shields.io/badge/-MS%20SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white) |
+| **Cloud & Apps** | AWS, Streamlit, Git, Data Warehousing |
 
 ---
 
-### 📁 Featured Projects
+## 🚀 Key Projects
 
-#### 🏎️ [PakWheels Data Pipeline](https://github.com/qayasmehtab/Pakwheel_Data)
-*A complete ETL journey from web scraping to visualization.*
-* **Extract:** Scraped 10+ pages of vehicle listings using Python.
-* **Transform:** Cleaned and normalized data for consistency.
-* **Load:** Stored processed data into **MS SQL Server**.
-* **Visualize:** Built a **Streamlit** dashboard to showcase market insights.
+### 🏎️ [PakWheels ETL Pipeline](https://github.com/qayasmehtab/Pakwheel_Data)
+*End-to-end data pipeline for automobile market analysis.*
+- **Extraction:** Automated scraping of 10+ pages of vehicle data using Python.
+- **Transformation:** Applied cleaning and normalization using **Pandas**.
+- **Loading:** Integrated with **Microsoft SQL Server** for structured storage.
+- **Deployment:** Insights served via a live **Streamlit** dashboard.
 
-#### 🛠️ [Scripting & Logging Framework](https://github.com/qayasmehtab)
-*Focusing on robust data extraction and error handling.*
-* Modular Python scripts for data extraction.
-* Implementation of **Logging functions** for pipeline monitoring.
-* SQL execution functions and log verification.
-
----
-
-### 📈 Career Journey
-From managing large-scale inventory at **Air Blue** to building data warehouses—I bring a unique perspective of **real-world data reliability** and **operational efficiency** to technical roles.
-
-* 🎓 **Education:** Bachelor's from Dadabhoy University.
-* 📜 **Certifications:** Snowflake (Data Application Builders & Data Warehousing).
-* 🏗️ **Currently Learning:** Advanced Cloud Data Engineering at SMIT.
+### 📜 [Scripting & Logging Framework](https://github.com/qayasmehtab)
+*Focusing on data integrity and pipeline monitoring.*
+- Developed modular Python scripts for error-free data extraction.
+- Implemented **custom logging functions** to track pipeline health.
+- Built SQL execution wrappers for automated database updates.
 
 ---
 
-### 📫 Let's Connect!
-- 💼 **LinkedIn:** [linkedin.com/in/qayas](https://linkedin.com/in/qayas)
-- 📧 **Email:** [qayasabbasi98@gmail.com](mailto:qayasabbasi98@gmail.com)
-- 📍 **Location:** Karachi, Pakistan
+## 🏆 Certifications & Growth
+- ❄️ **Snowflake:** Data Application Builders & Data Warehousing.
+- 🎓 **Education:** Bachelor’s degree from Dadabhoy University.
+- 🏗️ **Current Training:** Advanced Cloud Data Engineering at SMIT.
 
 ---
-*“Turning raw data into reliable decisions.”*
+
+<div align="center">
+  <h3>Let's build something data-driven! 🚀</h3>
+  <p>Karachi, Pakistan 📍</p>
+</div>
