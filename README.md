@@ -1,79 +1,65 @@
 <div align="center">
 
-# QAYAS MEHTAB
-### ☁️ Cloud Data Engineer | Building Scalable ETL Solutions
+# 👋 Hi, I'm Qayas Mehtab
+### ☁️ Cloud Data Engineer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/qayas)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/qayasmehtab)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:qayasabbasi98@gmail.com)
-
----
-
-![Data Engineering Banner](https://capsule-render.vercel.app/render?type=waving&color=009ACD&height=200&section=header&text=DATA%20ENGINEERING&fontSize=70&animation=fadeIn&fontAlignY=38)
-
-*"Transferring raw data into reliable cloud insights."*
+<img src="https://capsule-render.vercel.app/render?type=waving&color=00BFFF&height=180&section=header&text=Qayas%20Mehtab&fontSize=60&animation=fadeIn" width="100%" />
 
 </div>
 
-## 📖 About Me
-I am an aspiring **Cloud Data Engineer** transitioning from a strong background in **Operations & Warehouse Management** at **Air Blue**. My experience in handling complex inventory datasets gives me a unique edge in ensuring data reliability and pipeline efficiency.
+---
 
-- 🛠️ Currently building automated **ETL Pipelines**.
-- 🔍 Specializing in **Web Scraping** and **Data Transformation**.
-- ☁️ Skilled in **Snowflake**, **SQL Server**, and **Python**.
+## 📖 About Me  
+I am an aspiring **Cloud Data Engineer** with a strong foundation in Python-based ETL pipelines, data extraction, transformation, and loading workflows. I am currently transitioning from a successful operations and warehouse background into data engineering, where I apply my real-world data handling experience to build structured, reliable, and scalable data solutions. With hands-on project experience in web scraping, data cleaning, SQL databases, and dashboard development, I am focused on developing end-to-end data pipelines that are easy to understand, maintain, and scale. 
 
 ---
 
-## 🛠️ Technical Toolbox
-
-<table align="center">
-  <tr>
-    <td align="center" width="200"><strong>Languages</strong></td>
-    <td align="center" width="200"><strong>Databases</strong></td>
-    <td align="center" width="200"><strong>Tools/Cloud</strong></td>
-  </tr>
-  <tr>
-    <td align="center">Python (Pandas, NumPy)<br>SQL</td>
-    <td align="center">Snowflake<br>MS SQL Server</td>
-    <td align="center">AWS (Learning)<br>Streamlit, Selenium</td>
-  </tr>
-</table>
+## 🛠️ Technical Skills:
+- **𝗖𝗹𝗼𝘂𝗱 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺𝘀:** <img src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white" height="22"> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white" height="22">
+- **𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴:** <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" height="22"> <img src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white" height="22">
+- **𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴:** ETL Pipelines, Web Scraping (Selenium, BeautifulSoup), Data Logging & Validation
+- **𝗧𝗼𝗼𝗹𝘀:** <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" height="22"> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" height="22"> Streamlit, VS Code
 
 ---
 
-## 🚀 Key Projects
+## 🚀 Projects & Technical Experience 🌟  
 
-### 🏎️ [PakWheels ETL Pipeline](https://github.com/qayasmehtab/Pakwheel_Data)
-*A complete data journey from the web to a dashboard.*
-- **Extract:** Scraped 10+ pages of vehicle listings using Python.
-- **Transform:** Data cleaning and normalization via **Pandas**.
-- **Load:** Stored structured data in **SQL Server**.
-- **Display:** Built a **Streamlit** app for visual insights.
+### 🏎️ [PakWheels Data Pipeline](https://github.com/qayasmehtab/Pakwheel_Data) (Oct - Nov 2025)
+*End-to-end ETL automation and data visualization.*
+- **Extract:** Scraped 10 pages of vehicle listing data using **Python & Selenium**.
+- **Transform:** Cleaned and normalized data using **Pandas** for consistency.
+- **Load:** Stored processed data into **Microsoft SQL Server**.
+- **Deploy:** Served real-time insights through a **Streamlit** web application.
 
-### 📜 [Scripting & Logging Framework](https://github.com/qayasmehtab)
-*Focusing on robust data extraction and error handling.*
-- Modular scripts for reliable data scraping.
-- Custom **logging functions** for monitoring pipeline health.
-- Automated SQL execution with error validation.
-
----
-
-## 📊 GitHub Performance
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=qayasmehtab&show_icons=true&theme=tokyonight" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=qayasmehtab&layout=compact&theme=tokyonight" height="170" />
-</div>
+### 📜 Scripting & Logging Framework
+*Building reliable and maintainable data systems.*
+- Implemented modular **Data Extraction** and **Transformation logic**.
+- Developed **Logging functions** to monitor pipeline health and verify data.
+- Built **SQL query execution functions** for automated database loading.
 
 ---
 
-## 🏆 Education & Certifications
-- 🎓 **Bachelor’s Degree** – Dadabhoy University, Karachi.
-- ❄️ **Snowflake Certifications:** Data Warehousing & App Building.
-- 🏗️ **Training:** Cloud Data Engineering at **SMIT**.
+## 📜 Certifications & Education
+- ❄️ **Snowflake:** Data Engineering & Data Warehousing Workshop  
+- ❄️ **Snowflake:** Data Application Builders Workshop  
+- 🏗️ **SMIT Karachi:** Cloud Data Engineering (Ongoing)
+- 🎓 **Dadabhoy University:** Bachelor's Degree
+
+---
+
+## 🤝 Professional Experience  
+- **Procurement & Warehouse Supervisor** | Air Blue Limited (2017 – 2024)  
+  *Managed large-scale inventory datasets and ensured data consistency across teams.*
+- **Customer Service Executive** | TRG (ibex Global)  
+- **Accounts Civil Site Supervisor** | Dolby Corporation  
 
 ---
 
 <div align="center">
-  <h3>Let's collaborate on data projects! 🚀</h3>
-  <p>Karachi, Pakistan 📍</p>
-</div>
+
+### 🌍 Let's Connect
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/qayas) [![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:qayasabbasi98@gmail.com) [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/qayasmehtab)
+
+<br />
+
+<img src="https://capsule-render.vercel.app/render?type=slice&color=00BFFF&height=100&section=footer" width="1
