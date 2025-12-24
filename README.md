@@ -1,7 +1,7 @@
 <div align="center">
 
 # Qayas Mehtab
-### ☁️ Cloud Data Engineer | ETL Specialist | Python Scripter
+### ☁️ Cloud Data Engineer 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/qayas)
 [![Portfolio](https://img.shields.io/badge/GitHub-Portfolio-black?style=for-the-badge&logo=github)](https://github.com/qayasmehtab)
