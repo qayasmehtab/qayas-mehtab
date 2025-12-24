@@ -15,7 +15,7 @@
 </div>
 
 ## 📖 About Me
-I am an aspiring **Cloud Data Engineer** transitioning from a successful **Operations & Warehouse** background at **Air Blue**. My experience in managing complex inventory systems gives me a unique edge in understanding data reliability and operational efficiency. I am now building scalable, automated ETL pipelines and data warehouses.
+I am an aspiring Cloud Data Engineer with a strong foundation in Python-based ETL pipelines, data extraction, transformation, and loading workflows. I am currently transitioning from a successful operations and warehouse background into data engineering, where I apply my real-world data handling experience to build structured, reliable, and scalable data solutions. With hands-on project experience in web scraping, data cleaning, SQL databases, and dashboard development, I am focused on developing end-to-end data pipelines that are easy to understand, maintain, and scale. I am actively seeking a full-time entry-level Cloud/Data Engineering role where I can grow technically and contribute to data-driven decision-making.
 
 ---
 
