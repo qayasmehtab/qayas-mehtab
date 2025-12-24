@@ -7,271 +7,405 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
-        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
-        .gradient-text { background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .card-hover:hover { transform: translateY(-10px); border-color: #38bdf8; box-shadow: 0 20px 40px -20px rgba(56, 189, 248, 0.4); }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
         
-        /* Cyber-Tech Banner Background */
-        .tech-banner {
-            background: radial-gradient(circle at 50% 50%, #1e293b 0%, #020617 100%);
-            position: relative;
-            overflow: hidden;
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #0f172a; 
+            color: #f8fafc; 
+            scroll-behavior: smooth; 
         }
-        .grid-overlay {
+
+        .glass { 
+            background: rgba(30, 41, 59, 0.7); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255,255,255,0.08); 
+        }
+
+        .gradient-text { 
+            background: linear-gradient(90deg, #38bdf8, #818cf8); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        .card-hover { 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        }
+
+        .card-hover:hover { 
+            transform: translateY(-12px); 
+            border-color: #38bdf8; 
+            box-shadow: 0 20px 40px -20px rgba(56, 189, 248, 0.4); 
+        }
+
+        .banner-mesh {
             position: absolute;
-            inset: 0;
-            background-image: linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
-            background-size: 50px 50px;
-            perspective: 1000px;
-            transform: rotateX(60deg) translateY(-100px);
-            z-index: 0;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(129, 140, 248, 0.12) 0%, transparent 40%);
+            z-index: -1;
         }
+        
         .floating { animation: float 6s ease-in-out infinite; }
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
         }
-        .pulse-border { animation: pulse 2s infinite; }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.4); }
-            70% { box-shadow: 0 0 0 15px rgba(56, 189, 248, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); }
+
+        .nav-active { color: #38bdf8; position: relative; }
+        .nav-active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0; width: 100%; height: 2px;
+            background: #38bdf8;
+            border-radius: 2px;
+        }
+
+        /* Mobile Menu Animation */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+        }
+        #mobile-menu.active {
+            transform: translateY(0);
         }
     </style>
 </head>
-<body>
+<body class="selection:bg-sky-500/30">
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-50 glass border-b border-white/5">
+    <nav class="fixed w-full z-[100] glass border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center font-black text-white italic">Q</div>
-                <span class="text-xl font-bold tracking-tighter">QAYAS MEHTAB</span>
+            <a href="#" class="text-2xl font-black tracking-tighter">QAYAS<span class="text-sky-400">.</span>MEHTAB</a>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-widest items-center">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#education" class="hover:text-sky-400 transition-colors">Education</a>
+                <a href="#contact" class="bg-sky-500 hover:bg-sky-400 text-white px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-sky-500/20">Hire Me</a>
             </div>
-            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-widest">
-                <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
-                <a href="#projects" class="hover:text-sky-400 transition">Repositories</a>
-                <a href="#contact" class="px-4 py-2 bg-sky-500 rounded-md text-white hover:bg-sky-400 transition">Contact Me</a>
-            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-0 left-0 w-full glass h-screen flex flex-col items-center justify-center space-y-8 md:hidden -z-10">
+            <button id="close-btn" class="absolute top-6 right-6 text-2xl"><i class="fa-solid fa-xmark"></i></button>
+            <a href="#about" class="text-2xl font-bold">About</a>
+            <a href="#skills" class="text-2xl font-bold">Skills</a>
+            <a href="#projects" class="text-2xl font-bold">Projects</a>
+            <a href="#education" class="text-2xl font-bold">Education</a>
+            <a href="#contact" class="bg-sky-500 px-8 py-3 rounded-2xl font-bold">Hire Me</a>
         </div>
     </nav>
 
-    <!-- Professional Tech Banner (Hero) -->
-    <section class="tech-banner min-h-screen flex items-center justify-center pt-20 px-6">
-        <div class="grid-overlay"></div>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+        <div class="banner-mesh"></div>
+        
+        <div class="absolute top-1/4 left-10 text-sky-500/5 text-[12rem] font-black select-none floating" style="animation-delay: 1s;">{ }</div>
+        <div class="absolute bottom-1/4 right-10 text-indigo-500/5 text-[10rem] font-black select-none floating">DB</div>
         
         <div class="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center z-10">
-            <!-- Left Side: Professional Hook -->
-            <div class="text-center lg:text-left">
-                <div class="inline-flex items-center space-x-3 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8">
-                    <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
-                    <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-300">Operational Excellence &rarr; Data Engineering</span>
+            <div>
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-[10px] font-bold mb-8 tracking-[0.2em] uppercase">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                    </span>
+                    <span>Ready for Entry-Level Cloud Role</span>
                 </div>
-                
-                <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter leading-none">
-                    Building <br> <span class="gradient-text italic">Data Highways</span>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-[1]">
+                    Cloud <span class="gradient-text">Data</span> <br> Engineer
                 </h1>
-                
-                <p class="text-slate-400 text-lg md:text-xl mb-10 max-w-xl font-medium leading-relaxed">
-                    Cloud Data Engineer focused on <span class="text-white underline decoration-sky-500 decoration-2 underline-offset-4">ETL Pipelines</span>, Web Scraping, and scalable Database Architectures. 
+                <p class="text-slate-400 text-lg md:text-xl mb-10 max-w-xl font-light leading-relaxed">
+                    Bridging the gap between <span class="text-white font-semibold">Operational Excellence</span> and <span class="text-white font-semibold">Scalable Data Pipelines</span>. 
                 </p>
-
-                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-                    <a href="#projects" class="px-8 py-4 bg-white text-black font-black rounded-xl hover:bg-sky-400 hover:text-white transition-all transform hover:scale-105 active:scale-95 flex items-center">
-                        <i class="fa-brands fa-github mr-2"></i> Explore Code
+                <div class="flex flex-wrap gap-4 mb-10">
+                    <a href="#projects" class="bg-sky-500 hover:bg-sky-400 text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-xl shadow-sky-500/20 flex items-center group">
+                        Explore Work <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </a>
-                    <a href="https://linkedin.com/in/qayas" target="_blank" class="px-8 py-4 glass text-white font-bold rounded-xl border border-white/10 hover:border-sky-500 transition-all flex items-center">
-                        <i class="fa-brands fa-linkedin-in mr-2 text-sky-400"></i> LinkedIn
-                    </a>
+                    <a href="mailto:qayasabbasi98@gmail.com" class="glass px-8 py-4 rounded-2xl font-bold hover:bg-white/5 transition-all">Download CV</a>
+                </div>
+                <div class="flex space-x-6 text-2xl text-slate-500">
+                    <a href="https://linkedin.com/in/qayas" target="_blank" class="hover:text-sky-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/qayasmehtab" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
 
-            <!-- Right Side: The "Visual Banner" Card -->
-            <div class="relative group">
-                <!-- Decorative Glows -->
-                <div class="absolute -inset-1 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+            <div class="hidden lg:block relative group">
+                <div class="glass p-10 rounded-[3.5rem] border-white/10 shadow-2xl relative z-10 card-hover">
+                    <div class="flex items-center space-x-2 mb-8">
+                        <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+                    </div>
+                    <div class="space-y-6 font-mono text-sm">
+                        <div class="p-5 bg-slate-900/80 rounded-2xl border border-white/5">
+                            <code class="text-sky-400 italic"># Pipeline status: active</code> <br>
+                            <code class="text-emerald-400">extract</code><code class="text-slate-300">(raw_source)</code> <br>
+                            <code class="text-emerald-400">transform</code><code class="text-slate-300">(pandas_logic)</code> <br>
+                            <code class="text-emerald-400">load</code><code class="text-slate-300">(snowflake_warehouse)</code>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-5 bg-sky-500/5 rounded-2xl border border-sky-500/10">
+                                <span class="block text-slate-500 text-[10px] uppercase font-bold mb-1">Ops Experience</span>
+                                <span class="text-2xl font-black text-white">7+ Years</span>
+                            </div>
+                            <div class="p-5 bg-indigo-500/5 rounded-2xl border border-indigo-500/10">
+                                <span class="block text-slate-500 text-[10px] uppercase font-bold mb-1">Data Quality</span>
+                                <span class="text-2xl font-black text-sky-400">99.9%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -inset-10 bg-sky-500/10 blur-[100px] rounded-full -z-10 group-hover:bg-sky-500/20 transition-all"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Background Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-12 items-start">
+            <div class="md:col-span-4">
+                <h2 class="text-sm font-black text-sky-400 tracking-[0.3em] uppercase mb-4">The Professional Journey</h2>
+                <h3 class="text-4xl font-black text-white leading-tight">From Operations to <span class="gradient-text">Engineering</span></h3>
+            </div>
+            <div class="md:col-span-8 space-y-8 text-slate-400 text-lg leading-relaxed font-light">
+                <p>
+                    With over <span class="text-white font-medium">7 years of operational excellence at Air Blue Limited</span>, I have managed large-scale inventory datasets, maintained mission-critical stock reports, and ensured data consistency across cross-functional teams. This background instilled a deep respect for <span class="text-white font-medium">data integrity</span> and process discipline.
+                </p>
+                <p>
+                    Today, I am leveraging that "real-world" experience to build technical solutions. I specialize in Python-based ETL frameworks, web scraping with Selenium, and cloud data warehousing. My goal is to transform complex, raw data into structured assets that drive strategic decision-making.
+                </p>
                 
-                <div class="glass p-1 rounded-[2rem] border-white/10 shadow-2xl overflow-hidden">
-                    <div class="bg-slate-950/80 p-8 md:p-12 rounded-[1.8rem]">
-                        <!-- Visual Header -->
-                        <div class="flex justify-between items-start mb-10">
-                            <div>
-                                <h3 class="text-2xl font-black text-white tracking-tighter mb-1">DATA_PIPELINE.v1</h3>
-                                <div class="flex space-x-1">
-                                    <span class="h-1 w-8 bg-sky-500 rounded-full"></span>
-                                    <span class="h-1 w-4 bg-indigo-500 rounded-full"></span>
-                                </div>
-                            </div>
-                            <i class="fa-solid fa-cloud-arrow-down text-3xl text-sky-500/50"></i>
-                        </div>
-
-                        <!-- Skill Tags Overlay -->
-                        <div class="space-y-6">
-                            <div class="flex flex-wrap gap-3">
-                                <span class="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-md text-[10px] font-bold text-sky-400 tracking-widest uppercase">Python</span>
-                                <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-md text-[10px] font-bold text-indigo-400 tracking-widest uppercase">SQL Server</span>
-                                <span class="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-md text-[10px] font-bold text-emerald-400 tracking-widest uppercase">Snowflake</span>
-                                <span class="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded-md text-[10px] font-bold text-purple-400 tracking-widest uppercase">AWS</span>
-                            </div>
-
-                            <!-- Live Code Snippet -->
-                            <div class="font-mono text-[12px] p-6 bg-black/40 rounded-2xl border border-white/5 leading-loose">
-                                <div class="flex space-x-2 mb-2">
-                                    <div class="w-2 h-2 rounded-full bg-red-400"></div>
-                                    <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
-                                    <div class="w-2 h-2 rounded-full bg-green-400"></div>
-                                </div>
-                                <p><span class="text-purple-400">def</span> <span class="text-sky-400">etl_process</span>():</p>
-                                <p class="pl-4"><span class="text-slate-500"># Scraping Market Data</span></p>
-                                <p class="pl-4 text-emerald-400">raw_data = scraper.get_pakwheels()</p>
-                                <p class="pl-4 text-slate-300">clean_df = transform(raw_data)</p>
-                                <p class="pl-4"><span class="text-sky-400 text-opacity-70 italic">db.load(clean_df, warehouse='Snowflake')</span></p>
-                            </div>
-                            
-                            <!-- Stats -->
-                            <div class="flex justify-between items-center pt-4">
-                                <div class="text-center">
-                                    <div class="text-2xl font-black text-white">7+</div>
-                                    <div class="text-[9px] font-bold text-slate-500 uppercase tracking-tighter">Years Ops Exp</div>
-                                </div>
-                                <div class="h-8 w-[1px] bg-white/10"></div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-black text-sky-400">100%</div>
-                                    <div class="text-[9px] font-bold text-slate-500 uppercase tracking-tighter">Automation Goal</div>
-                                </div>
-                                <div class="h-8 w-[1px] bg-white/10"></div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-black text-white">SQL</div>
-                                    <div class="text-[9px] font-bold text-slate-500 uppercase tracking-tighter">Mastery</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="grid sm:grid-cols-2 gap-6 pt-6">
+                    <div class="p-6 rounded-3xl bg-slate-800/30 border border-white/5">
+                        <h4 class="text-white font-bold mb-2 flex items-center">
+                            <i class="fa-solid fa-plane-up text-sky-400 mr-2 text-sm"></i> Air Blue (2017-2024)
+                        </h4>
+                        <p class="text-sm">Supervised warehouse data and procurement logs, managing 100k+ inventory units with zero discrepancies.</p>
+                    </div>
+                    <div class="p-6 rounded-3xl bg-slate-800/30 border border-white/5">
+                        <h4 class="text-white font-bold mb-2 flex items-center">
+                            <i class="fa-solid fa-headset text-sky-400 mr-2 text-sm"></i> TRG (IBEX Global)
+                        </h4>
+                        <p class="text-sm">Honed communication and analytical problem-solving skills in high-pressure customer account management.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technical Skills Grid -->
-    <section id="skills" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-sm font-bold text-sky-500 tracking-[0.4em] uppercase mb-4">Core Competencies</h2>
-            <p class="text-3xl md:text-5xl font-black tracking-tight">Tools of the <span class="gradient-text">Trade</span></p>
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 glass relative">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-center text-sm font-bold text-sky-400 tracking-[0.3em] uppercase mb-16">Core Competencies</h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Python -->
+                <div class="p-8 rounded-[2rem] bg-slate-900/50 border border-white/5 card-hover text-center">
+                    <div class="w-16 h-16 bg-sky-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-brands fa-python text-3xl text-sky-400"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-2">Python Ecosystem</h4>
+                    <p class="text-slate-500 text-xs">Pandas, NumPy, Matplotlib, Requests</p>
+                </div>
+                <!-- Data Engineering -->
+                <div class="p-8 rounded-[2rem] bg-slate-900/50 border border-white/5 card-hover text-center">
+                    <div class="w-16 h-16 bg-emerald-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-gears text-3xl text-emerald-400"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-2">ETL Pipelines</h4>
+                    <p class="text-slate-500 text-xs">Extraction, Transformation, Loading & Validation</p>
+                </div>
+                <!-- Databases -->
+                <div class="p-8 rounded-[2rem] bg-slate-900/50 border border-white/5 card-hover text-center">
+                    <div class="w-16 h-16 bg-indigo-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-database text-3xl text-indigo-400"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-2">Modern Warehousing</h4>
+                    <p class="text-slate-500 text-xs">Snowflake, AWS, SQL Server</p>
+                </div>
+                <!-- Automation -->
+                <div class="p-8 rounded-[2rem] bg-slate-900/50 border border-white/5 card-hover text-center">
+                    <div class="w-16 h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-robot text-3xl text-amber-400"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-2">Web Automation</h4>
+                    <p class="text-slate-500 text-xs">Selenium, BS4, Scrapy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+            <div>
+                <h2 class="text-sm font-black text-sky-400 tracking-[0.3em] uppercase mb-4">Portfolio</h2>
+                <h3 class="text-5xl font-black text-white">Featured <span class="gradient-text">Builds</span></h3>
+            </div>
+            <a href="https://github.com/qayasmehtab" target="_blank" class="text-slate-400 hover:text-white transition font-bold flex items-center underline decoration-sky-500/50 underline-offset-8">
+                View All Repositories <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+            </a>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Skill Block -->
-            <div class="glass p-10 rounded-[2.5rem] card-hover text-center">
-                <div class="w-20 h-20 bg-sky-500/10 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                    <i class="fa-brands fa-python text-4xl text-sky-500"></i>
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="glass p-8 rounded-[3rem] card-hover relative group border-t-4 border-sky-500">
+                <div class="text-[10px] font-black tracking-widest text-sky-400 mb-4 flex justify-between uppercase">
+                    <span>Framework</span>
+                    <i class="fa-brands fa-github text-lg text-slate-600"></i>
                 </div>
-                <h4 class="text-xl font-bold mb-2">Python</h4>
-                <p class="text-slate-500 text-sm">ETL Frameworks, Pandas, Automation Scripts</p>
+                <h4 class="text-2xl font-bold mb-6 text-white">Modular ETL Core</h4>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                    A custom-built Python framework featuring advanced logging, automated CSV transformation, and robust SQL injection validation.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-white/5 px-3 py-1.5 rounded-lg text-[10px] font-bold">LOGGING</span>
+                    <span class="bg-white/5 px-3 py-1.5 rounded-lg text-[10px] font-bold">SQL_ENGINE</span>
+                </div>
+                <a href="https://github.com/qayasmehtab" target="_blank" class="w-full py-4 bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 rounded-2xl text-xs font-bold transition flex items-center justify-center">
+                    Source Code <i class="fa-solid fa-code ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="glass p-8 rounded-[3rem] card-hover relative group border-t-4 border-emerald-500">
+                <div class="text-[10px] font-black tracking-widest text-emerald-400 mb-4 flex justify-between uppercase">
+                    <span>Automated Pipeline</span>
+                    <i class="fa-brands fa-github text-lg text-slate-600"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-6 text-white">PakWheels Market Analysis</h4>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                    Full-cycle pipeline: Scraping vehicle data via Selenium, cleaning with Pandas, and loading into SQL Server for market valuation.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-white/5 px-3 py-1.5 rounded-lg text-[10px] font-bold">SELENIUM</span>
+                    <span class="bg-white/5 px-3 py-1.5 rounded-lg text-[10px] font-bold">PANDAS</span>
+                </div>
+                <a href="https://github.com/qayasmehtab" target="_blank" class="w-full py-4 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 rounded-2xl text-xs font-bold transition flex items-center justify-center">
+                    Source Code <i class="fa-solid fa-code ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="glass p-8 rounded-[3rem] card-hover relative group border-t-4 border-indigo-500">
+                <div class="text-[10px] font-black tracking-widest text-indigo-400 mb-4 flex justify-between uppercase">
+                    <span>Data Scraping</span>
+                    <i class="fa-brands fa-github text-lg text-slate-600"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-6 text-white">Banggood Product Scraper</h4>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                    Scalable BeautifulSoup-based scraper designed to parse thousands of product listings into structured relational database tables.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-white/5 px-3 py-1.5 rounded-lg text-[10px] font-bold">BEAUTIFULSOUP</span>
+                    <span class="bg-white/5 px-3 py-1.5 rounded-lg text-[10px] font-bold">DATAFRAMES</span>
+                </div>
+                <a href="https://github.com/qayasmehtab" target="_blank" class="w-full py-4 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 rounded-2xl text-xs font-bold transition flex items-center justify-center">
+                    Source Code <i class="fa-solid fa-code ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 px-6 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-center text-sm font-black text-sky-400 tracking-[0.3em] uppercase mb-16">Academic Foundation</h3>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row md:items-center justify-between p-10 glass rounded-[2.5rem] border-white/5 group">
+                    <div>
+                        <span class="text-sky-400 font-bold text-xs uppercase tracking-widest mb-2 block">Post-Graduation / Ongoing</span>
+                        <h4 class="text-2xl font-black text-white">Commerce & Business Studies</h4>
+                        <p class="text-slate-400 mt-2">Focused on data-driven business strategy and financial auditing.</p>
+                    </div>
+                    <div class="mt-6 md:mt-0 text-slate-500 font-mono text-sm border-l md:border-l-0 md:pl-0 pl-6 border-sky-500/30">
+                        Higher Education <br> Commission
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-slate-500 text-sm">Actively pursuing certifications in <span class="text-sky-400">AWS Cloud Practitioner</span> and <span class="text-sky-400">Snowflake Essentials</span>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto glass p-16 rounded-[4rem] text-center border border-white/5 relative overflow-hidden">
+            <div class="absolute -top-20 -left-20 w-80 h-80 bg-sky-500/5 rounded-full blur-[120px]"></div>
+            <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-indigo-500/5 rounded-full blur-[120px]"></div>
+            
+            <h2 class="text-sm font-black text-sky-400 tracking-[0.4em] uppercase mb-6">Let's Connect</h2>
+            <h3 class="text-5xl md:text-6xl font-black mb-10 text-white leading-tight">Ready to build the <br> <span class="gradient-text">Future of Data</span>.</h3>
+            
+            <p class="text-slate-400 mb-16 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+                Currently open to entry-level Cloud or Data Engineering roles. Let's discuss how my operational discipline and technical skills can benefit your team.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-16">
+                <a href="mailto:qayasabbasi98@gmail.com" class="p-8 bg-slate-800/50 rounded-3xl border border-slate-700 hover:border-sky-500 transition-all group flex flex-col items-center">
+                    <i class="fa-solid fa-envelope text-sky-400 text-3xl mb-4 group-hover:scale-110 transition-transform"></i>
+                    <div class="text-sm font-bold text-white mb-1">qayasabbasi98@gmail.com</div>
+                    <div class="text-[10px] text-slate-500 uppercase tracking-widest">Email me anytime</div>
+                </a>
+                <a href="tel:+923212811321" class="p-8 bg-slate-800/50 rounded-3xl border border-slate-700 hover:border-sky-500 transition-all group flex flex-col items-center">
+                    <i class="fa-solid fa-phone text-sky-400 text-3xl mb-4 group-hover:scale-110 transition-transform"></i>
+                    <div class="text-sm font-bold text-white mb-1">+92 321 2811321</div>
+                    <div class="text-[10px] text-slate-500 uppercase tracking-widest">Mobile / WhatsApp</div>
+                </a>
             </div>
             
-            <div class="glass p-10 rounded-[2.5rem] card-hover text-center">
-                <div class="w-20 h-20 bg-indigo-500/10 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                    <i class="fa-solid fa-database text-4xl text-indigo-500"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-2">SQL Engineering</h4>
-                <p class="text-slate-500 text-sm">Complex Queries, SQL Server, Snowflake Warehousing</p>
-            </div>
-
-            <div class="glass p-10 rounded-[2.5rem] card-hover text-center">
-                <div class="w-20 h-20 bg-emerald-500/10 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                    <i class="fa-solid fa-robot text-4xl text-emerald-500"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-2">Web Scraping</h4>
-                <p class="text-slate-500 text-sm">Selenium, BeautifulSoup, Data Extraction</p>
-            </div>
-
-            <div class="glass p-10 rounded-[2.5rem] card-hover text-center">
-                <div class="w-20 h-20 bg-purple-500/10 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                    <i class="fa-solid fa-cloud-bolt text-4xl text-purple-500"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-2">Cloud Infrastructure</h4>
-                <p class="text-slate-500 text-sm">AWS Integration, Pipeline Deployment</p>
+            <div class="flex justify-center space-x-12">
+                <a href="https://linkedin.com/in/qayas" class="text-slate-500 hover:text-sky-400 transition-colors text-4xl" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/qayasmehtab" class="text-slate-500 hover:text-white transition-colors text-4xl" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- GitHub Showcase Section -->
-    <section id="projects" class="py-24 px-6 bg-slate-950/50">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div>
-                    <h2 class="text-sm font-bold text-sky-500 tracking-[0.4em] uppercase mb-4">Open Source Repositories</h2>
-                    <p class="text-3xl md:text-5xl font-black tracking-tight">Recent <span class="gradient-text">Projects</span></p>
-                </div>
-                <a href="https://github.com/qayasmehtab" target="_blank" class="px-6 py-3 border border-white/10 rounded-xl font-bold text-sm hover:bg-white hover:text-black transition-all">View All on GitHub <i class="fa-brands fa-github ml-2"></i></a>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-8">
-                <!-- Project Card 1 -->
-                <div class="glass p-8 md:p-12 rounded-[3rem] card-hover group border-l-8 border-sky-500">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-12 h-12 bg-sky-500 rounded-2xl flex items-center justify-center text-white">
-                            <i class="fa-solid fa-gears text-2xl"></i>
-                        </div>
-                        <span class="text-[10px] font-black text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full uppercase">Live Repo</span>
-                    </div>
-                    <h4 class="text-2xl font-black mb-4 group-hover:text-sky-400 transition">Python ETL Framework</h4>
-                    <p class="text-slate-400 mb-8 leading-relaxed">
-                        A complete framework for building modular ETL pipelines. Includes custom logging, error handling, and multi-format data loaders.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="https://github.com/qayasmehtab" target="_blank" class="font-bold text-sm flex items-center text-white">
-                            Check README <i class="fa-solid fa-chevron-right ml-2 text-sky-500"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="glass p-8 md:p-12 rounded-[3rem] card-hover group border-l-8 border-indigo-500">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-12 h-12 bg-indigo-500 rounded-2xl flex items-center justify-center text-white">
-                            <i class="fa-solid fa-car text-2xl"></i>
-                        </div>
-                        <span class="text-[10px] font-black text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full uppercase">Automation</span>
-                    </div>
-                    <h4 class="text-2xl font-black mb-4 group-hover:text-indigo-400 transition">PakWheels Market Scraper</h4>
-                    <p class="text-slate-400 mb-8 leading-relaxed">
-                        End-to-end scraper using Selenium to track car prices in Pakistan. Automates data collection into structured SQL tables for analysis.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="https://github.com/qayasmehtab" target="_blank" class="font-bold text-sm flex items-center text-white">
-                            View Code <i class="fa-solid fa-chevron-right ml-2 text-indigo-500"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact CTA -->
-    <section id="contact" class="py-24 px-6 max-w-5xl mx-auto text-center">
-        <div class="glass p-16 rounded-[4rem] relative overflow-hidden border border-sky-500/20 shadow-2xl shadow-sky-500/10">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 rounded-full blur-[100px]"></div>
-            <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to optimize your <span class="gradient-text">Data?</span></h2>
-            <p class="text-slate-400 text-lg mb-12 max-w-2xl mx-auto font-medium">
-                I am actively seeking my first role in Cloud/Data Engineering. Let's discuss how my operational background and technical skills can help your team.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-                <a href="mailto:qayasabbasi98@gmail.com" class="px-10 py-5 bg-sky-500 rounded-2xl font-black text-white hover:bg-sky-400 transition shadow-lg shadow-sky-500/30 w-full md:w-auto">Hire Qayas Mehtab</a>
-                <div class="flex space-x-6">
-                    <a href="tel:+923212811321" class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-white/10 transition border border-white/5"><i class="fa-solid fa-phone"></i></a>
-                    <a href="https://linkedin.com/in/qayas" class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-white/10 transition border border-white/5"><i class="fa-brands fa-linkedin-in text-sky-400"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-12 border-t border-white/5 text-center">
-        <p class="text-slate-600 text-xs font-bold uppercase tracking-[0.5em]">2025 | Qayas Mehtab | Architecting Data Flow</p>
+    <footer class="py-12 text-center text-slate-700 text-[9px] tracking-[0.5em] uppercase border-t border-slate-900/50">
+        &copy; 2025 QAYAS MEHTAB | CLOUD DATA ENGINEER | BUILT FOR PERFORMANCE
     </footer>
 
+    <script>
+        // Mobile menu logic
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        };
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // Smooth reveal on scroll (simplified)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
